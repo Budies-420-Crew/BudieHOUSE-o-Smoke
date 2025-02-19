@@ -1,7 +1,7 @@
-<p> <div class="w3-text-14px w3-padding" > <br><h1><b>What Are BUD'ies?</b></h1>
+What Are BUD'ies?
 BUD'ies are a unique and innovative collection of characters inspired by the most iconic marijuana strains. Each character represents a specific strain, combining its look, effects, and personality into a creative and visually striking design. From OG classics to today's favorites, BUD'ies celebrate the diversity and history of cannabis culture in a fun and relatable way.
 
-<p><h2>The Purpose of BUD'ies</h2></p>
+The Purpose of BUD'ies
 BUD'ies aim to connect cannabis enthusiasts through art, creativity, and storytelling. Our mission is to make cannabis culture more approachable and engaging while giving each strain its own character and personality. By combining the worlds of art, merchandise, and digital innovation, BUD'ies offer something for everyone, whether you're a collector, a marketer, or simply a fan of cannabis.
 
 <br>
