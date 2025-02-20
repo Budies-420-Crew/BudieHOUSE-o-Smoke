@@ -33,6 +33,8 @@ html, body {
 }
 
 </style>
+<!-- Attach the loading script in your <head /> -->
+<script src='https://terminal.jup.ag/main-v3.js'></script>
 
 </head>
 <body class="w3-content" style="max-width:1350px">
@@ -45,7 +47,7 @@ html, body {
 </div>
 
   <div class="w3-padding-64 w3-large w3-text-purple" style="font-weight:bold">
-    <a href="#" class="w3-bar-item w3-button">Buddies</a>
+    <a href="#" class="w3-bar-item w3-button">Buddies™</a>
         <a href="#" class="w3-bar-item w3-button">NFT*COMING SOON*</a>
         <a href="#" class="w3-bar-item w3-button">DAO</a> <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-text-purple w3-green w3-left-align" id="myBtn"> Apperel & More<i class="fa fa-caret-down"></i>
       </a>
@@ -66,7 +68,7 @@ html, body {
 
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
-  <div class="w3-bar-item w3-padding-24 w3-wide">LOGO</div>
+  <div class="w3-bar-item w3-padding-24 w3-wide">BUD'ies™</div>
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
 </header>
 
@@ -75,13 +77,13 @@ html, body {
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:250px">
-
+™
   <!-- Push down content on small screens -->
   <div class="w3-hide-large" style="margin-top:83px"></div>
   
   <!-- Top header -->
   <header class="w3-container w3-xlarge">
-    <div class="w3-text-white">BUD'ies</div>
+    <div class="w3-text-white">BUD'ies™</div>
     <p class="w3-right">
       <i class="fa fa-shopping-cart w3-margin-right"></i>
       <i class="fa fa-search"></i>
@@ -107,9 +109,9 @@ These NFTs will serve as collectibles and provide access to future benefits, inc
 
 <li> Merchandise: Apparel, collectibles, and accessories featuring your favorite BUD'ies.</li>
 
- <li>Marketing Opportunities: Licensing BUD'ies characters for cannabis-related branding, advertising, and packaging.<li>
+ <li>Marketing Opportunities: Licensing BUD'ies characters for cannabis-related branding, advertising, and packaging.</li>
 
-<li>Interactive Content: Expanding BUD'ies into the metaverse, offering an immersive experience for fans to connect with their favorite characters.<li>
+<li>Interactive Content: Expanding BUD'ies into the metaverse, offering an immersive experience for fans to connect with their favorite characters.</li>
 </ol>
 <h4>Why BUD'ies?</h4>
 BUD'ies are more than just characters—they’re a movement to bring cannabis culture to life. They highlight the creativity, community, and individuality that cannabis represents, offering a fresh and exciting way to celebrate this growing industry.
@@ -117,27 +119,80 @@ BUD'ies are more than just characters—they’re a movement to bring cannabis c
 Stay tuned for the first NFT drop and become a part of the BUD'ies journey. Together, we’re creating a world where every strain has a story!</div></p>
 
   <!-- Subscribe section -->
-  <div class="w3-container w3-black w3-padding-32">
+ <div class="w3-container w3-black w3-padding-32">
     <h5>Subscribe</h5>
-    <p>To get special offers and VIP treatment:</p>
-    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
-    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
-  </div>
-  
+    <p>To get special offers and Whitelist</p>
+    <p><input id="emailInput" class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button id="subscribeButton" type="button" class="w3-button w3-red w3-margin-bottom" onclick="sendEmail()">Subscribe</button>
+</div>
+
+<script>
+function sendEmail() {
+    var email = document.getElementById("emailInput").value;
+    var button = document.getElementById("subscribeButton");
+
+    if (email) {
+        var subject = encodeURIComponent("Newsletter Subscription");
+        var body = encodeURIComponent(email + " has joined the newsletter.");
+        window.location.href = "mailto:bud.ies420crew@gmail.com?subject=" + subject + "&body=" + body;
+
+        // Change button text to "Done"
+        button.innerText = "Done";
+        button.style.backgroundColor = "green"; // Optional: change button color
+        button.disabled = true; // Disable the button to prevent multiple clicks
+    } else {
+        alert("Please enter a valid email address.");
+    }
+}
+</script>
+
+
+<!--JUP-->
+
+<script>
+  window.Jupiter.init({
+    displayMode: "widget",
+    endpoint: "https://api.mainnet-beta.solana.com",
+  });
+</script>
+
   <!-- Footer -->
-  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+<footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
     <div class="w3-row-padding">
-      <div class="w3-col s4">
-        <h6>Contact</h6>
-        <p>Questions? Go ahead.</p>
-        <form action="/action_page.php" target="_blank">
-          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
-          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
-          <button type="submit" class="w3-button w3-block w3-black">Send</button>
-        </form>
-      </div>
+        <div class="w3-col s4">
+            <h6>Contact</h6>
+            <p>Questions? Go ahead.</p>
+            <form onsubmit="sendEmail(event)">
+                <p><input id="name" class="w3-input w3-border" type="text" placeholder="Name" required></p>
+                <p><input id="email" class="w3-input w3-border" type="text" placeholder="Email" required></p>
+                <p><input id="subject" class="w3-input w3-border" type="text" placeholder="Subject" required></p>
+                <p><input id="message" class="w3-input w3-border" type="text" placeholder="Message" required></p>
+                <button type="submit" class="w3-button w3-block w3-black">Send</button>
+            </form>
+        </div>
+    </div>
+</footer>
+
+<script>
+function sendEmail(event) {
+    event.preventDefault(); // Prevents form submission
+
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var subject = document.getElementById("subject").value;
+    var message = document.getElementById("message").value;
+
+    var mailtoLink = "mailto:bud.ies420crew@gmail.com"
+        + "?subject=" + encodeURIComponent(subject)
+        + "&body=" + encodeURIComponent(
+            "Name: " + name + "\n" +
+            "Email: " + email + "\n" +
+            "Message: " + message
+        );
+
+    window.location.href = mailtoLink;
+}
+</script>
 
       <div class="w3-col s4">
         <h6>About</h6>
@@ -154,18 +209,18 @@ Stay tuned for the first NFT drop and become a part of the BUD'ies journey. Toge
 
       <div class="w3-col s4 w3-justify">
         <h6>Store</h6>
-        <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+        <p><i class="fa fa-fw fa-map-marker"></i> Bud'ies™</p>
         <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
         <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
         <h6>We accept</h6>
         <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
-        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+       <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
         <br>
+        <a href="https://x.com/BUDies_420_crew" target="_blank">
+            <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        </a>
         <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
         <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
-        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
-        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
         <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
       </div>
     </div>
