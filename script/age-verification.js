@@ -36,6 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     document.getElementById("noBtn").addEventListener("click", function () {
-        window.location.href = "https://www.google.com"; // Redirect to another site
+        window.location.href = "https://www.budeez420crew.com"; // Redirect to another site
     });
 });
