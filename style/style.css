@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #A8D5BA; /* Light pine green */
-    color: white;
+    color: black;
     margin: 0;
     padding: 0;
 }
@@ -9,6 +9,7 @@ body {
 header {
     background: white; /* White background for the header */
     color: black; /* Adjust text color for readability */
+    margin: 200px; 
     padding: 350px;
     font-size: 24px;
     font-weight: bold;
