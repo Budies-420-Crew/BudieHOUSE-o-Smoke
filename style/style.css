@@ -9,27 +9,29 @@ body {
     height: 100vh;
 }
 
+
 header {
     background: white;
     color: black;
-    padding: 20px;
     font-size: 24px;
     font-weight: bold;
-    text-align: left;
-    padding-left: 200px; /* pushes header content to right of logo */
-    height: 350px;
     display: flex;
     align-items: center;
-    position: relative;
+    padding: 20px 40px;
+    height: 350px;
+    gap: 40px; /* spacing between logo and text */
 }
 
 .logo {
     width: 200px;
     height: auto;
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    position: static; /* <- remove absolute so it flows naturally */
 }
+
+.header-text {
+    flex-grow: 1;
+}
+
 
 nav {
     display: flex;
