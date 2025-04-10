@@ -9,7 +9,7 @@ body {
 header {
     background: white; /* White background for the header */
     color: black; /* Adjust text color for readability */
-    padding: 20px;
+    padding: 90px;
     font-size: 24px;
     font-weight: bold;
     text-align: center;
@@ -107,7 +107,7 @@ footer {
 }
 
 .logo {
-    width: 150px;
+    width: 350px;
     height: 150px;
     position: absolute;
     top: 0;
