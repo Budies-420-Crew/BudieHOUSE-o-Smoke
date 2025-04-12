@@ -1,6 +1,6 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #A8D5BA;
+    font-family: serif;
+    background-color: #209d50;
     color: black;
     margin: 0;
     padding: 0;
@@ -13,6 +13,7 @@ body {
 header {
     background: white;
     color: black;
+    font-family: 'Neuton';
     font-size: 24px;
     font-weight: bold;
     display: flex;
@@ -94,6 +95,6 @@ button {
 
 footer {
     padding: 20px;
-    background: #1db954;
+    background: #e1dfd9;
     text-align: center;
 }
