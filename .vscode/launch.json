@@ -5,10 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "msedge",
+            "name": "Launch Chrome",
             "request": "launch",
-            "name": "Open index.html",
-            "file": "c:\\Users\\magic\\Desktop\\BudieHOME\\index.html"
+            "type": "chrome",
+            "url": "http://localhost:8080",
+            "webRoot": "${workspaceFolder}"
         }
+       
+ 
     ]
 }
