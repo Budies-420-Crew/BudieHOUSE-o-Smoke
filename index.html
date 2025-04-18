@@ -8,72 +8,61 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="traceparent" content="{traceparent}">
     <meta http-equiv="Accept-CH" content="Sec-CH-UA-Platform-Version, Sec-CH-UA-Model" />
-    <link rel="preload" as="style" href="//assets.squarespace.com/universal/fonts/squarespace-clarkson-v2.css">
-    <link rel="stylesheet" type="text/css" href="//assets.squarespace.com/universal/fonts/squarespace-clarkson-v2.css">
     <title>BUD'eez Apparel & Smoke Shop</title>
-    <script src="//assets.squarespace.com/@sqs/polyfiller/1.6/legacy.js" nomodule type="text/javascript" crossorigin="anonymous"></script>
-    <script src="//assets.squarespace.com/@sqs/polyfiller/1.6/modern.js" type="text/javascript" crossorigin="anonymous"></script>
-    <link rel="preload" as="fetch" crossorigin href="/api/context/config">
-    <script defer src="https://assets.squarespace.com/universal/scripts-compressed/extract-css-runtime-c9bb9c141e76d426-min.en-US.js"></script>
-    <script defer src="https://assets.squarespace.com/universal/scripts-compressed/error-reporter-1c3a3cb980e0f6a4-min.en-US.js"></script>
-    <script defer src="https://assets.squarespace.com/universal/scripts-compressed/cldr-resource-pack-dcdd450af60b4e34-min.en-US.js"></script>
-    <script defer src="https://assets.squarespace.com/universal/scripts-compressed/config-appshell-8866fee5f3b7d15e-min.en-US.js"></script>
-    <link rel="preload" href="https://assets.squarespace.com/universal/scripts-compressed/async-config-bootstrap-b571eab23ca05e23-min.en-US.js" as="script">
-    <link href="https://assets.squarespace.com/universal/scripts-compressed/../styles-compressed/config-appshell-b4046463b72f34e2-min.en-US.css" rel="stylesheet">
+
+    <!-- Your Styles -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap">
+    <link rel="stylesheet" href="/assets/css/main.css"> <!-- Make sure this path is correct -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   </head>
 
   <body class="squarespace-config squarespace-editable">
     <div class="sqs-damask" data-test="appshell-container">
       <!-- BEGIN: Apparel Page Custom Content -->
-      <section style="padding: 2em; max-width: 1000px; margin: auto;">
-        <img src="https://i.ibb.co/JWR2Q8LB/BUD-eez-no-background.png" alt="BUD'eez Logo" style="max-width: 300px; display: block; margin: auto;">
-        <h1 style="text-align:center; font-family: 'Clarkson', sans-serif;">BUD'eez Apparel & Smoke Shop</h1>
-        <p style="text-align: center; font-size: 1.2em;">Wear it. Smoke it. Live it.</p>
+      <section class="container py-5 text-center">
+        <img src="https://i.ibb.co/JWR2Q8LB/BUD-eez-no-background.png" alt="BUD'eez Logo" class="img-fluid mb-4" style="max-width: 300px;">
+        <h1 class="mb-3" style="font-family: 'Oswald', sans-serif;">BUD'eez Apparel & Smoke Shop</h1>
+        <p class="lead">Wear it. Smoke it. Live it.</p>
 
-        <div>
-          <h2>🔥 Streetwear Vibes</h2>
-          <ul>
-            <li>Graphic Tees</li>
-            <li>Stoner-Style Hoodies</li>
-            <li>Trippy Hats & Snapbacks</li>
-            <li>Eco-friendly Joggers</li>
-          </ul>
+        <div class="row mt-5 text-start">
+          <div class="col-md-6">
+            <h2>🔥 Streetwear Vibes</h2>
+            <ul>
+              <li>Graphic Tees</li>
+              <li>Stoner-Style Hoodies</li>
+              <li>Trippy Hats & Snapbacks</li>
+              <li>Eco-friendly Joggers</li>
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h2>💨 Smoke Shop Essentials</h2>
+            <ul>
+              <li>Smell-Proof Bags & Lock Boxes</li>
+              <li>Custom Grinders & Rolling Trays</li>
+              <li>Limited-Edition Glass & Dab Gear</li>
+              <li>Lighters, Ashtrays & More</li>
+            </ul>
+          </div>
+        </div>
 
-          <h2>💨 Smoke Shop Essentials</h2>
-          <ul>
-            <li>Smell-Proof Bags & Lock Boxes</li>
-            <li>Custom Grinders & Rolling Trays</li>
-            <li>Limited-Edition Glass & Dab Gear</li>
-            <li>Lighters, Ashtrays & More</li>
-          </ul>
-
+        <div class="mt-5">
           <h2>🧢 Drop Collections</h2>
           <p>Monthly collections that fuse fashion and functionality for the lifted lifestyle.</p>
-
-          <h3>Next Drop: 04/20 – Stay Lit Collection</h3>
+          <h4 class="text-primary">Next Drop: 04/20 – Stay Lit Collection</h4>
           <p>Celebrate 420 in style with glow-in-the-dark gear, neon trays, and collab tees from local artists.</p>
 
-          <a href="#shop" style="display: inline-block; margin-top: 1em; background: black; color: white; padding: 0.5em 1em; text-decoration: none; border-radius: 5px;">🔥 Shop Now</a>
+          <a href="#shop" class="btn btn-dark btn-lg mt-3">🔥 Shop Now</a>
         </div>
       </section>
       <!-- END: Apparel Page Custom Content -->
     </div>
 
-    <!-- Google Tag Manager -->
-    <noscript>
-      <iframe src="//www.googletagmanager.com/ns.html?id=GTM-BCCP" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <script type="application/json" id="squarespace-frame-rollups">
-      {"squarespace-management":{"css":"https://assets.squarespace.com/universal/scripts-compressed/../styles-compressed/management-bd60182d8a6b1e08-min.en-US.css"}}
-    </script>
-    <script>
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({
-        'gtm.start': new Date().getTime(),event:'gtm.js'
-      });
-      var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-BCCP');
-    </script>
-    <!-- End Google Tag Manager -->
+    <!-- Your Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/main.js"></script> <!-- Make sure this path is correct -->
 
-    <script async src="//consent.trustarc.com/notice?domain=squarespace.com&c=teconsent&js=nj&noticeType=bb&text=true&pn=2&gtm=1&pcookien" crossorigin="anonymous"></script>
   </body>
 </html>
