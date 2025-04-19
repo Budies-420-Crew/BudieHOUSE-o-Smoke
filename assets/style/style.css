@@ -1,118 +1,155 @@
-/* Reset & Base */
-* {
-  box-sizing: border-box;
-}
+/* General Styles */
 body {
-  font-family: 'Neuton', serif;
-  background-color: #209d50;
-  color: black;
-  margin: 0;
-  padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1e3d2f; /* Dark cannabis green */
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-/* HEADER & LOGO */
-header {
-  background: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 40px;
-}
-
-header b {
-  font-size: 24px;
-  font-weight: bold;
-  color: black;
+/* Header */
+header {  
+    flex-shrink: 0;
+    background: #2e5537;
+    color: #e4ffe3;
+    font-size: 36px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 40px;
+    gap: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .logo {
-  width: 200px;
-  height: auto;
+    width: 160px;
+    height: auto;
 }
 
-/* NAVIGATION */
+.header-text {
+    flex-grow: 1;
+}
+
+/* Navigation */
 nav {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 15px;
-  background: white;
+      flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #3a6146;
+    padding: 15px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
 nav a {
-  color: black;
-  text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #1db954;
+    color: #80ff9f;
 }
 
-/* MAIN CONTENT */
+/* Sections */
 .container {
-  padding: 40px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+    margin-top: 50px; /* space below navbar */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
 }
 
 .section {
-  margin-bottom: 60px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 60px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
-.text-content h1,
-.text-content h2 {
-  font-family: 'Neuton', serif;
-  margin-bottom: 0.5em;
+.text-content h2, .text-content h3, .text-content h4 {
+    color: #baffc1;
+    margin-top: 0;
 }
 
 .text-content p {
-  line-height: 1.6;
-  margin-bottom: 1em;
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-.text-content ul {
-  list-style: disc inside;
-  margin-left: 1em;
-}
-
-/* FORM / SUBSCRIBE */
+/* Form Styles */
 .form-container {
-  background: #222;
-  padding: 20px;
-  border-radius: 8px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
-  align-items: center;
-  max-width: 1000px;
-  margin: 0 auto;
+    background: #2b4231;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-input,
-textarea {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  flex: 1 1 200px;
+input, textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
 }
 
 button {
-  padding: 10px 20px;
-  background: #1db954;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-  border-radius: 5px;
+    padding: 12px 25px;
+    background: #38e273;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
 }
 
-/* FOOTER */
+button:hover {
+    background: #2ad161;
+}
+
+/* Call to Action Buttons */
+.cta a {
+    display: inline-block;
+    background-color: #38e273;
+    color: #000;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta a:hover {
+    background-color: #2ad161;
+}
+
+/* Footer */
 footer {
-  padding: 20px;
-  background: #e1dfd9;
-  text-align: center;
+    padding: 20px;
+    background: #314d39;
+    text-align: center;
+    color: #cccccc;
+    font-size: 14px;
 }
