@@ -1,1 +1,105 @@
 
+<!DOCTYPE html>
+<html lang="en" class="squarespace-damask">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>BUD'eez 420 Crew - NFT</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body class="squarespace-config squarespace-editable">
+    <!-- Logo -->
+    <section class="container text-center py-4">
+      <img src="https://i.ibb.co/JWR2Q8LB/BUD-eez-no-background.png" alt="BUD'eez Logo" class="img-fluid mb-4" style="max-width: 300px;">
+      <h1 style="font-family: 'Montserrat', sans-serif;"><b>BUD'eez 420 Crew</b></h1>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="w3-bar w3-black w3-padding-16 w3-center">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#utility" class="w3-bar-item w3-button">Utility</a>
+      <a href="#collab" class="w3-bar-item w3-button">Collaboration</a>
+      <a href="#roadmap" class="w3-bar-item w3-button">Roadmap</a>
+      <a href="#community" class="w3-bar-item w3-button">Community</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container py-5">
+      <!-- About Section -->
+      <section id="about" class="mb-5">
+        <h2><b>NFTs</b></h2>
+        <p>This is your ticket to all things BUD'eez!</p>
+        <p><b>What are BUD'eez?</b></p>
+        <p>BUD'eez are a collection of unique characters inspired by cannabis culture...</p>
+        <p><b>Why BUD'eez?</b></p>
+        <p>They highlight creativity, community, and individuality within cannabis culture...</p>
+        <p><b>How to Get BUD'eez?</b></p>
+        <p>Available as NFTs on the Solana blockchain, each featuring unique traits and perks.</p>
+        <p><b>What's Next?</b></p>
+        <p>Future merch, marketing, and interactive content are coming. Join the crew!</p>
+      </section>
+
+      <!-- Utility Section -->
+      <section id="utility" class="mb-5">
+        <h2>Utility & Benefits</h2>
+        <p>Exclusive perks, staking rewards, and more!</p>
+      </section>
+
+      <!-- Roadmap Section -->
+      <section id="roadmap" class="mb-5">
+        <h2>Roadmap</h2>
+        <p><b>The BUD'eez brand has big plans:</b> exclusive NFT drops, merch, licensing, and more.</p>
+        <h3><b>What’s Next?</b></h3>
+        <ol>
+          <li>Merchandise: Apparel, collectibles, and accessories featuring your favorite BUD'eez.</li>
+          <li>Marketing: License characters for branding and packaging.</li>
+          <li>Interactive Content: Enter the metaverse with immersive BUD'eez experiences.</li>
+        </ol>
+        <h4><b>Why BUD'eez?</b></h4>
+        <p>They're a movement, a creative expression of the cannabis lifestyle.</p>
+      </section>
+
+      <!-- Collaboration Section -->
+      <section id="collab" class="mb-5">
+        <h2>Apparel & More</h2>
+        <p>Partner with us for NFT integration and brand scaling.</p>
+        <div class="w3-bar w3-padding-16">
+          <a href="#" class="w3-button w3-green w3-margin">Apply for Partnership</a>
+          <a href="#" class="w3-button w3-teal w3-margin">Join the Crew</a>
+          <a href="#" class="w3-button w3-indigo w3-margin">View Collection</a>
+        </div>
+      </section>
+
+      <!-- Community Section -->
+      <section id="community" class="mb-5">
+        <h2>Join Our Community</h2>
+        <div class="form-container w3-padding">
+          <h3>Subscribe for Updates</h3>
+          <input type="email" id="subscribe-email" placeholder="Enter your email" class="w3-input w3-border w3-margin-bottom">
+          <button onclick="subscribe()" class="w3-button w3-black">Subscribe</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-padding-32 w3-black">
+      &copy; 2025 BUD'eez 420 Crew | All Rights Reserved
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://terminal.jup.ag/main-v3.js"></script>
+    <script src="script/jup.js"></script>
+    <script src="script/subscribe.js"></script>
+    <script src="script/age-verification.js"></script>
+  </body>
+</html>
