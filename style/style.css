@@ -1,46 +1,40 @@
+
 /* General Styles */
 body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #1e3d2f; /* Dark cannabis green */
-    color: #f5f5f5;
+    font-family: 'Neuton', sans-serif;
+    background-color: #47915d;
+    color: #000000;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
+    }
 
 /* Header */
 header {
-    flex-shrink: 0;
-    background: #ffffff; /* Changed to white */
-    color: #ffffff; 
-    font-size: 36px;
-    font-weight: bold;
+    background: #ffffff;
+    color: #150220;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Left-aligned */
-    padding: 40px;
-    gap: 30px;
+    justify-content: flex-start;
+    padding: 20px 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Logo */
 .logo {
-    width: 160px;
+    width: 200px;
     height: auto;
-    margin-right: auto; /* Push everything else away to the right */
-}
-
-/* Header Text */
-.header-text {
-    color: #1e3d2f; /* Make sure any text inside is visible */
 }
 
 /* Navigation */
 nav {
-      flex-shrink: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 30px;
     background-color: #3a6146;
     padding: 15px 0;
@@ -63,7 +57,7 @@ nav a:hover {
 
 /* Sections */
 .container {
-    margin-top: 50px; /* space below navbar */
+    margin-top: 50px;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -93,7 +87,7 @@ nav a:hover {
 
 /* Form Styles */
 .form-container {
-    background: #2b4231;
+    background-color: teal;
     padding: 25px;
     border-radius: 12px;
     display: flex;
@@ -130,10 +124,10 @@ button:hover {
     background: #2ad161;
 }
 
-/* Call to Action Buttons */
+/* CTA Buttons */
 .cta a {
     display: inline-block;
-    background-color: #38e273;
+    background-color: #47915d;
     color: #000;
     padding: 10px 20px;
     margin: 10px 5px;
@@ -144,7 +138,7 @@ button:hover {
 }
 
 .cta a:hover {
-    background-color: #2ad161;
+    background-color: #2f795a;
 }
 
 /* Footer */
@@ -154,4 +148,67 @@ footer {
     text-align: center;
     color: #cccccc;
     font-size: 14px;
+}
+
+/* Headspace Section Above Nav */
+#headspace {
+    background-color: #ffffff; /* change to any color you like */
+    text-align: left;
+    padding: 20px 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 1001;
+}
+
+.headspace-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ===================== */
+/* MOBILE RESPONSIVENESS */
+/* ===================== */
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    #headspace {
+        padding: 15px 10px;
+    }
+
+    #headspace img {
+        max-width: 80%;
+    }
+
+    #headspace p {
+        font-size: 16px;
+    }
+
+    header {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 5px;
+        padding: 10px 0;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .container {
+        padding: 20px 10px;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    input, textarea {
+        max-width: 100%;
+    }
 }
