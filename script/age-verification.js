@@ -20,13 +20,13 @@ document.addEventListener("DOMContentLoaded", function () {
     modal.style.flexDirection = "column";
     modal.style.zIndex = "10000";
 
-    modal.innerHTML = `
+    modal.innerHTML = 
         <div style="background: #fff; padding: 20px; border-radius: 10px; text-align: center; max-width: 400px;">
             <h2 style="color: black;">Are you 21 or older?</h2>
             <button id="yesBtn" style="margin: 10px; padding: 10px 20px; background: green; color: white; border: none; cursor: pointer;">Yes</button>
             <button id="noBtn" style="margin: 10px; padding: 10px 20px; background: red; color: white; border: none; cursor: pointer;">No</button>
         </div>
-    `;
+    
     document.body.appendChild(modal);
 
     // Button actions
