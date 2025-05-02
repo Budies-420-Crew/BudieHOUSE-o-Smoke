@@ -17,7 +17,6 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
     <!-- Attach the loading script in your <head /> -->
-    <script src="script/jup.js"></script>
     <script src='https://terminal.jup.ag/main-v4.js'></script>
 
   </head>
@@ -109,6 +108,11 @@
     <!-- Scripts -->
     <script src="script/subscribe.js"></script>
     <script src="script/age-verification.js"></script>
+    <script>
+      window.Jupiter.init({
+  endpoint: "https://api.mainnet-beta.solana.com",
+});
+    </script>
     <!--<script src="script/age-verification.js"></script>-->
 
    
