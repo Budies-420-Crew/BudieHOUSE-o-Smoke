@@ -20,6 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     modal.style.flexDirection = "column";
     modal.style.zIndex = "10000";
 
+    // The fix: wrap the HTML in backticks (template literal)
     modal.innerHTML = `
         <div style="background: #fff; padding: 20px; border-radius: 10px; text-align: center; max-width: 400px;">
             <h2 style="color: black;">Are you 21 or older?</h2>
