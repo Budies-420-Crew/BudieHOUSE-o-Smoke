@@ -26,6 +26,19 @@
 
   <body class="squarespace-config squarespace-editable">
 
+            <!-- Scripts -->
+   <script>
+     window.Jupiter.init({
+  formProps: {
+    swapMode: "ExactInOrOut",
+  },
+});
+   </script>
+    
+    <script src="script/subscribe.js"></script>
+    
+    <script src="script/age-verification.js"></script>
+
             <!-- Headspace Section -->
   <header id="headspace" class="headerlogo">
     <div class="headspace-container">
@@ -115,16 +128,6 @@
         </div>
       </section>
     </div>
-
-        <!-- Scripts -->
-    <script src="script/subscribe.js"></script>
-    <script src="script/jup.js">
-      window.Jupiter.init({
-  displayMode: "widget",
-  endpoint: "https://api.mainnet-beta.solana.com",
-});
-    </script>
-    <script src="script/age-verification.js"></script>
 
   </body>
 
